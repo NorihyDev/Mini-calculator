@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculatrice accessible avec navigation au clavier">
+    <title>Calculatrice Pro - Application de Calcul</title>
+    <link rel="stylesheet" href="/projets/calculatrice/style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <!-- Écran -->
+            <div class="display-section">
+                <div class="previous-operand" id="previousOperand" aria-live="polite"></div>
+                <div class="current-operand" id="currentOperand" aria-live="polite" aria-atomic="true">0</div>
+            </div>
+
+            <!-- Boutons -->
+            <div class="buttons-grid">
+                <!-- Ligne 1: Fonctions -->
+                <button class="btn btn-function" data-action="clear" aria-label="Effacer tout">AC</button>
+                <button class="btn btn-function" data-action="delete" aria-label="Supprimer dernier caractère">DEL</button>
+                <button class="btn btn-function" data-action="percent" aria-label="Pourcentage">%</button>
+                <button class="btn btn-operator" data-operator="÷" aria-label="Division">÷</button>
+
+                <!-- Ligne 2: 7, 8, 9, × -->
+                <button class="btn btn-number" data-number="7" aria-label="7">7</button>
+                <button class="btn btn-number" data-number="8" aria-label="8">8</button>
+                <button class="btn btn-number" data-number="9" aria-label="9">9</button>
+                <button class="btn btn-operator" data-operator="×" aria-label="Multiplication">×</button>
+
+                <!-- Ligne 3: 4, 5, 6, − -->
+                <button class="btn btn-number" data-number="4" aria-label="4">4</button>
+                <button class="btn btn-number" data-number="5" aria-label="5">5</button>
+                <button class="btn btn-number" data-number="6" aria-label="6">6</button>
+                <button class="btn btn-operator" data-operator="−" aria-label="Soustraction">−</button>
+
+                <!-- Ligne 4: 1, 2, 3, + -->
+                <button class="btn btn-number" data-number="1" aria-label="1">1</button>
+                <button class="btn btn-number" data-number="2" aria-label="2">2</button>
+                <button class="btn btn-number" data-number="3" aria-label="3">3</button>
+                <button class="btn btn-operator" data-operator="+" aria-label="Addition">+</button>
+
+                <!-- Ligne 5: 0, ., = -->
+                <button class="btn btn-number btn-zero" data-number="0" aria-label="0">0</button>
+                <button class="btn btn-number" data-number="." aria-label="Point décimal">.</button>
+                <button class="btn btn-equals" data-action="equals" aria-label="Égal">=</button>
+            </div>
+
+            <!-- Footer -->
+            <div class="calculator-footer">
+                <a href="../../index.html" class="back-link">← Retour au portfolio</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/projets/calculatrice/app.js"></script>
+</body>
+</html>
